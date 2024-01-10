@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Pretendard;
+  font-size: 100%;
+  font-style: normal;
+  line-height: normal;
+
+}
+
+body {
+  width: 100%;
+}
+
+/* 색상 팔레트 변수 지정 */
+:root {
+  --primary: #6D6AFE;
+  --red: #FF5B56;
+  --black: #111322;
+  --white: #ffffff;
+  --gray1: #3E3E43;
+  --gray2: #9FA6B2;
+  --gray3: #CCD5E3;
+  --gray4: #E7EFFB;
+  --gray5: #F0F6FF;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 1.25rem 12.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray5);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header svg{
+  width: 133px;
+  height: 24px;
+}
+
+/* 로그인, 회원가입 버튼 */
+.login,
+.signupBt {
+
+  background: linear-gradient(to right, #6D6AFE, #6AE3FE);
+  font-size: 1.125rem;
+  color: #F5F5F5;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupBt {
+  width: 21.875rem;
+}
+
+.login {
+  width: 8rem;
+}
+
+/* 메인화면 */
+.main-text {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(91deg, #6D6AFE 17.28%, #FF9F9F 74.98%);
+  background-clip: text;
+}
+
+.main-text span {
+  color: transparent;
+}
+
+.main-section {
+  background-color: var(--gray5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 4.375rem 0 0 0;
+  gap: 2.5rem;
+}
+
+
+/* 서브 화면 */
+.sub-section {
+  display: flex;
+  padding: 7.5rem 0 3.12rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sub-section img {
+  width: 34.375rem;
+  height: 28.125rem;
+  border-radius: 15px;
+  background: #F0F6FF;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+
+}
+
+.content.left {
+  margin-right: 9.813rem;
+}
+
+.content.right {
+  margin-left: 9.813rem;
+}
+
+.explanation {
+  color: #6B6B6B;
+  font-family: Abel;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+}
+
+.content-text {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.content-text span {
+  color: transparent;
+}
+
+/* 각 텍스트 그라데이션 */
+.text1 {
+  background: linear-gradient(96deg, #FE8A8A 1.72%, #A4CEFF 74.97%);
+  background-clip: text;
+}
+
+.text2 {
+  background: linear-gradient(277deg, #6FBAFF 59.22%, #FFD88B 93.66%);
+  background-clip: text;
+}
+
+.text3 {
+  background: linear-gradient(99deg, #6D7CCD 19.76%, rgba(82, 136, 133, 0.22) 52.69%);
+  background-clip: text;
+}
+
+.text4 {
+  background: var(--Fandom-K-gra-blue-to-pink, linear-gradient(271deg, #FE578F -9.84%, #68E8F9 107.18%));
+  background-clip: text;
+}
+
+footer {
+
+  padding-top: 7.5rem;
+
+}
+
+.footer-var {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  height: 10rem;
+  padding: 2rem 6.5rem 4rem 6.5rem;
+  background: var(--The-julge-black, #111322);
+}
+
+.codeit {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Acme;
+  text-align: center;
+  color: #676767;
+}
+
+.setting {
+  display: flex;
+  gap: 1.875rem;
+}
+.setting a {
+  color: #CFCFCF;
+
+}
+
+@media (max-width:1199px) {
+ 
+}
