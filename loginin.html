@@ -12,9 +12,9 @@
 
 <body>
   <section class="login">
-    <article class="logo-section">
-      <div class="logo">
-        <a href="/">
+    <article class="login__info">
+      <div class="login__logoSection">
+        <a class="login_logoSection--logo" href="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="133" height="24" viewBox="0 0 133 24" fill="none">
             <path d="M5.20583 15.7049V0.792232H0V20.2718H14.9638V15.7049H5.20583Z" fill="#6D6AFE" />
             <path d="M21.6801 20.2718V5.12621H16.4743V20.2718H21.6801ZM21.6801 3.96117V0H16.4743V3.96117H21.6801Z"
@@ -42,25 +42,25 @@
               fill="#6D6AFE" />
           </svg>
         </a>
-        <div class="check-user">
-          회원이 아니신가요? <a href="./signup.html">회원가입하기</a>
+        <div class="login__logSection--text">
+          회원이 아니신가요? <a class="logo__logosection--link" href="./signup.html">회원가입하기</a>
         </div>
       </div>
-      <form class="form">
-        <div class="input-box">
+      <form class="login__form">
+        <div class="login__form--infobox">
         <label for="email">이메일</label>
-        <input name="email" type="email">
+        <input class="login__form--info" name="email" type="email">
       </div>
-      <div class="input-box">
+      <div class="login__form--infobox">
         <label for="password">비밀번호</label>
-        <input name="password" type="password">
+        <input class="login__form--info" name="password" type="password">
       </div>
     </form>
-      <a class="loginBt" href="#">로그인</a>
+      <a class="login__info--loginBt" href="#">로그인</a>
     </article>
-    <article class="another-login">
+    <article class="login-another">
       <span>소셜 로그인</span>
-      <div class="link">
+      <div>
         <a href="#">
           <img src="./img/google.png">
         </a>
@@ -73,3 +73,4 @@
 </body>
 
 </html>
+

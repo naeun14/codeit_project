@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-a {
+a,
+.login_logoSection--logo,
+.logo__logosection--link {
   text-decoration: none;
 }
 
@@ -21,40 +23,50 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (max-width:767px) {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
 }
 
-.logo-section {
+.login__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
   width: 400px;
+
+  @media screen and (max-width:767px) {
+    width: 100%;
+  }
 }
 
-.logo svg {
+.login__logo svg {
   width: 210.583px;
   height: 38px;
 }
 
-.logo {
+.login__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
-.check-user {
+.login__logSection--text {
   color: var(--black, #000);
   font-weight: 400;
   line-height: 24px;
 }
 
-.check-user a {
+.logo__logosection--link {
   font-weight: 600;
 }
 
 /* 폼 작성 부분 */
-.form {
+.login__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,7 +74,7 @@ html {
   width: 100%;
 }
 
-.input-box {
+.login__form--infobox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -70,7 +82,7 @@ html {
   width: 100%;
 }
 
-.form input {
+.login__form--info {
   display: flex;
   width: 100%;
   padding: 18px 15px;
@@ -81,12 +93,12 @@ html {
   background: var(--Linkbrary-white, #FFF);
 }
 
-.form input:focus {
+.login__form--info:focus {
   border: 1px solid var(--Linkbrary-primary-color, #6D6AFE);
   outline: none;
 }
 
-.loginBt {
+.login__info--loginBt {
   background: linear-gradient(91deg, #6D6AFE 0.12%, #6AE3FE 101.84%);
   width: 100%;
   padding: 16px 20px;
@@ -101,7 +113,7 @@ html {
 }
 
 /* 하단 부분 */
-.another-login {
+.login-another {
   display: flex;
   width: 400px;
   padding: 12px 24px;
@@ -110,17 +122,8 @@ html {
   border-radius: 8px;
   border: 1px solid var(--Linkbrary-gray20, #CCD5E3);
   background: var(--Linkbrary-gray10, #E7EFFB);
-}
 
-@media screen and (max-width:767px) {
-  .login {
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 100%;
-  }
-
-  .logo-section,
-  .another-login {
+  @media screen and (max-width:767px) {
     width: 100%;
   }
 }
