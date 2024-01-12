@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>로그인</title>
   <link rel="stylesheet" href="loginin.css">
+  <script src="https://kit.fontawesome.com/9466166f5a.js" crossorigin="anonymous"></script> <!--폰트어썸 cdn 스크립트 주소-->
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
@@ -15,7 +16,8 @@
     <article class="login__info">
       <div class="login__logoSection">
         <a class="login_logoSection--logo" href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="133" height="24" viewBox="0 0 133 24" fill="none">
+          <svg class="login__logo--svg" xmlns="http://www.w3.org/2000/svg" width="133" height="24" viewBox="0 0 133 24"
+            fill="none">
             <path d="M5.20583 15.7049V0.792232H0V20.2718H14.9638V15.7049H5.20583Z" fill="#6D6AFE" />
             <path d="M21.6801 20.2718V5.12621H16.4743V20.2718H21.6801ZM21.6801 3.96117V0H16.4743V3.96117H21.6801Z"
               fill="#6D6AFE" />
@@ -48,23 +50,26 @@
       </div>
       <form class="login__form">
         <div class="login__form--infobox">
-        <label for="email">이메일</label>
-        <input class="login__form--info" name="email" type="email">
-      </div>
-      <div class="login__form--infobox">
-        <label for="password">비밀번호</label>
-        <input class="login__form--info" name="password" type="password">
-      </div>
-    </form>
+          <label for="email">이메일</label>
+          <input class="login__form--info" name="email" type="email">
+        </div>
+        <div class="login__form--infobox">
+          <label for="password">비밀번호</label>
+          <div class="login__password-container">
+            <input class="login__form--info" name="password" type="password">
+            <i class="fa-solid fa-eye"></i>         
+           </div>
+        </div>
+      </form>
       <a class="login__info--loginBt" href="#">로그인</a>
     </article>
     <article class="login-another">
       <span>소셜 로그인</span>
       <div>
-        <a href="#">
+        <a class="login-another__google" href="#">
           <img src="./img/google.png">
         </a>
-        <a href="#">
+        <a class="login-another__kakao" href="#">
           <img src="./img/kakaotalk.png">
         </a>
       </div>
@@ -73,4 +78,3 @@
 </body>
 
 </html>
-

@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 
-a,
+
 .login_logoSection--logo,
-.logo__logosection--link {
+.login__info--loginBt,
+.login-another__google,
+.login-another__kakao {
   text-decoration: none;
 }
 
@@ -43,12 +45,12 @@ html {
   }
 }
 
-.login__logo svg {
+.login__logo--svg {
   width: 210.583px;
   height: 38px;
 }
 
-.login__logo {
+.login__logoSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,6 +112,17 @@ html {
   color: var(--Grey-Light, #F5F5F5);
   font-size: 18px;
   font-weight: 600;
+}
+
+.login__password-container {
+  position:relative;
+  width: 100%;
+}
+
+.fa-eye {
+  position: absolute;
+  right: 15px;
+  top: 18px;
 }
 
 /* 하단 부분 */
