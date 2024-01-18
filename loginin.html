@@ -45,26 +45,33 @@
           </svg>
         </a>
         <div class="login__logSection--text">
-          회원이 아니신가요? <a class="logo__logosection--link" href="./signup.html">회원가입하기</a>
+          <p>
+            회원이 아니신가요? <a class="logo__logosection--link" href="./signup.html">회원가입하기</a>
+          </p>
         </div>
       </div>
       <form class="login__form">
         <div class="login__form--infobox">
-          <label for="email">이메일</label>
-          <input class="login__form--info" name="email" type="email">
+          <label for="login__email-form">이메일</label>
+          <input id="login__email-form" name="email" type="email">
         </div>
         <div class="login__form--infobox">
-          <label for="password">비밀번호</label>
+          <label for="login__password-form">비밀번호</label>
           <div class="login__password-container">
-            <input class="login__form--info" name="password" type="password">
-            <i class="fa-solid fa-eye"></i>         
-           </div>
+            <input id="login__password-form" name="password" type="password">
+            <i class="fa-solid fa-eye"></i>
+          </div>
         </div>
+        
       </form>
-      <a class="login__info--loginBt" href="#">로그인</a>
+      <form class="login__button-form">
+        <button class="login__info--loginBt" href="#">로그인</button>
+      </form>
     </article>
     <article class="login-another">
-      <span>소셜 로그인</span>
+      <p>
+        <span>소셜 로그인</span>
+      </p>
       <div>
         <a class="login-another__google" href="#">
           <img src="./img/google.png">
