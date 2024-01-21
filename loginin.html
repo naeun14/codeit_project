@@ -53,19 +53,21 @@
       <form class="login__form">
         <div class="login__form--infobox">
           <label for="login__email-form">이메일</label>
-          <input id="login__email-form" name="email" type="email">
+          <input id="login__email-form" name="email" type="email" placeholder="내용 입력">
+          <p class="login__email-form--error"></p>
         </div>
         <div class="login__form--infobox">
           <label for="login__password-form">비밀번호</label>
           <div class="login__password-container">
-            <input id="login__password-form" name="password" type="password">
-            <i class="fa-solid fa-eye"></i>
+            <input id="login__password-form" name="password" type="password" placeholder="내용 입력">
+            <i class="password__toggle-icon fa-solid fa-eye"></i>
+            <p class="login__password-form--error"></p>
           </div>
         </div>
         
       </form>
       <form class="login__button-form">
-        <button class="login__info--loginBt" href="#">로그인</button>
+        <button type="button" class="login__info--loginBt" href="#">로그인</button>
       </form>
     </article>
     <article class="login-another">
@@ -82,6 +84,7 @@
       </div>
     </article>
   </section>
+  <script src="inputform_change.js"></script>
 </body>
 
 </html>

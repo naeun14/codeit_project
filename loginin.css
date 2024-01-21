@@ -90,8 +90,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  /* gap: 12px; */
   width: 100%;
+}
+
+#login__email-form,
+#login__password-form {
+  margin-top: 12px;
 }
 
 .login__form--infobox input {
@@ -126,14 +131,23 @@ html {
 }
 
 .login__password-container {
-  position:relative;
+  position: relative;
   width: 100%;
 }
 
-.fa-eye {
+.password__toggle-icon {
   position: absolute;
   right: 15px;
-  top: 18px;
+  top: 30px;
+}
+
+.login__email-form--error,
+.login__password-form--error {
+  display: none;
+  color: #FF5B56;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
 }
 
 /* 하단 부분 */
