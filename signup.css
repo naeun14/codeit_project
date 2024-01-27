@@ -131,10 +131,21 @@ html {
   width: 100%;
 }
 
-.fa-eye {
+.password__toggle-icon {
   position: absolute;
   right: 15px;
   top: 18px;
+}
+
+
+.signup__email-form--error,
+.signup__password-form--error,
+.signup__pwcheck-form--error {
+  display: none;
+  color: #FF5B56;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
 }
 
 /* 하단 부분 */

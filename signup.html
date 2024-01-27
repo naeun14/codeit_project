@@ -58,20 +58,22 @@
             <div class="signup__form--inputbox">
               <label for="signup__email-form">이메일</label>
               <input id="signup__email-form" name="email" type="email">
+              <p class="signup__email-form--error"></p>
             </div>
             <div class="signup__form--inputbox">
               <label for="signup__password-form">비밀번호</label>
               <div class="signup__password-container">
                 <input id="signup__password-form" name="password" type="password">
-                <i class="fa-solid fa-eye"></i>
-                <p class=".signup__password-form--error"></p>
+                <i class="password__toggle-icon fa-solid fa-eye"></i>
+                <p class="signup__password-form--error"></p>
               </div>
             </div>
             <div class="signup__form--inputbox">
               <label for="signup__pwscheck-form">비밀번호 확인</label>
               <div class="signup__password-container">
                 <input id="signup__pwscheck-form" name="pwcheck" type="password">
-                <i class="fa-solid fa-eye"></i>
+                <i class="password__toggle-icon fa-solid fa-eye"></i>
+                <p class="signup__pwcheck-form--error"></p>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@
     </section>
   </main>
 
-  <script src="inputform_change.js"></script>
+  <script type="module" src="signup.js"></script>
 </body>
 
 </html>
